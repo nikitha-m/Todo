@@ -1,0 +1,8 @@
+<div class="container-fluid">
+<h1>Todos List By Nikitha</h1>
+<h3> Your tasks: </h3><br>
+</div>
+<ul *ngFor="let task of todos">
+    <app-todo-item [task] = "task" (taskDelete)="deleteTask($event)"></app-todo-item>
+</ul>
+
