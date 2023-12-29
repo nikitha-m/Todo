@@ -1,0 +1,3 @@
+hadoop fs -put vv.txt vv.txt
+hadoop jar myjar.jar WCDriver vv.txt outputfile
+hadoop fs -cat outputfile/part-00000
